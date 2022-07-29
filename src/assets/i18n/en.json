@@ -1,0 +1,13 @@
+{
+  "register": {
+    "save": "Save Changes",
+    "email": "Email",
+    "password": "password",
+    "confirm_password": "confirm password",
+    "terms": "Terms",
+    "details": "Inquiry for more details",
+    "copy_right": "XTEN Technology Inc. all rights reserved",
+    "first_name": "First Name",
+    "last_name": "Last Name"
+  }
+}
