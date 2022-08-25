@@ -32,6 +32,7 @@ export class RestService {
 
 
     register(request_data: any): Observable<any> {
+        console.log(JSON.stringify(request_data))
         return this.http.post(`${this.apiVersion}/register`, request_data);
     }
 

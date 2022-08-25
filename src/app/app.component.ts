@@ -65,18 +65,20 @@ export class AppComponent implements OnInit {
   }
 
   async onSubmit() {
-    console.log(this.registerForm.value)
-    // this.rest.register(value).subscribe({
-    //   next: (response) => {
-    //     console.log(response)
-    //     if (response.meta.response_desc !== "") {
-    //       this.router.navigate(['/dashboard']);
-    //     } else {
-    //       alert('register failed')
-    //     }
-    //   },
-    //   error: (e) => console.error(e)
-    // });
+    let request = this.registerForm.value
+    request['email'] = this.email
+    console.log(request)
+    this.rest.register(request).subscribe({
+      next: (response) => {
+        console.log(response)
+        if (response.meta.response_code == 20000) {
+          window.location.href = 'http://xten-technology.com/';        
+        } else {
+          alert('register failed')
+        }
+      },
+      error: (e) => console.error(e)
+    });
   }
 
   Languages: Languages[] = [
