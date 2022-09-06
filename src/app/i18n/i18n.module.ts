@@ -25,5 +25,5 @@ export class I18nModule {
 }
 
 export function translateLoaderFactory(httpClient: HttpClient) {
-  return new TranslateHttpLoader(httpClient);
+  return new TranslateHttpLoader(httpClient, './assets/i18n/', '.json')
 }

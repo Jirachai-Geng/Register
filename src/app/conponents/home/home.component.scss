@@ -1,0 +1,42 @@
+.login-box {
+    max-width: 600px;
+    padding: 64px 64px;
+    border-radius: 15px;
+    height: 100%;
+}
+
+.mat-card-title {
+    text-align: center;
+    margin-bottom: 8%;
+    margin-top: 8%;
+}
+
+.login-content {
+    padding: 64px 64px;
+    border-radius: 15px;
+}
+
+
+.center-screen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+}
+
+
+.btn-detail {
+    margin-top: 70px;
+    margin-bottom: 20px;
+    width: 80%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+    color: #FFF;
+    background-color: #5B78FA;
+}
+
+::ng-deep .mat-form-field-appearance-outline .mat-form-field-wrapper {
+    margin: 0px !important
+}

@@ -14,10 +14,14 @@ import { I18nModule } from './i18n/i18n.module';
 import { MatInputModule } from '@angular/material/input';
 import {MatButtonModule} from '@angular/material/button';
 import {FlexLayoutModule} from "@angular/flex-layout";
+import { TestComponent } from './test/test.component';
+import { HomeComponent } from './conponents/home/home.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    TestComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
