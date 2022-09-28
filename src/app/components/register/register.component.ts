@@ -8,11 +8,11 @@ import { CustomValidators } from 'src/app/confirm-password.validator';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 
 @Component({
-  selector: 'app-home',
-  templateUrl: './home.component.html',
-  styleUrls: ['./home.component.scss'],
+  selector: 'app-register',
+  templateUrl: './register.component.html',
+  styleUrls: ['./register.component.scss']
 })
-export class HomeComponent implements OnInit {
+export class RegisterComponent implements OnInit {
   hide = true;
   error = null;
   user_id!: any;
